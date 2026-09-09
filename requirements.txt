@@ -1,0 +1,6 @@
+customtkinter
+CTkMessagebox
+CTkTable
+mysql-connector-python
+pillow
+python-dotenv
