@@ -448,10 +448,10 @@ app.protocol("WM_DELETE_WINDOW",log_out)
 #----------------------------------------PAGE 1 OF APP-----------------------------------------
 page1=CTkFrame(app,fg_color="transparent")
 page1.pack(fill="both",expand=True)
-bg_img=CTkImage(Image.open("bg.png"),size=(800,800))
-ad_img=CTkImage(Image.open("admin.png"),size=(40,40))
-emp_img=CTkImage(Image.open("employee.png"),size=(40,40))
-i=CTkImage(Image.open("logo.png"),size=(75,75))
+bg_img=CTkImage(Image.open("icons/bg.png"),size=(800,800))
+ad_img=CTkImage(Image.open("icons/admin.png"),size=(40,40))
+emp_img=CTkImage(Image.open("icons/employee.png"),size=(40,40))
+i=CTkImage(Image.open("icons/logo.png"),size=(75,75))
 
 leb=CTkButton(page1,image=i,fg_color="#242424",hover_color="#242424",text_color="#03773d",
               text="Micro Center",font=("Arial",35,"bold"),width=100,height=100,)
@@ -482,9 +482,9 @@ pg_bar=CTkProgressBar(page1,width=1200,height=15,orientation="horizontal",corner
 pg_bar.place(relx=0.0,rely=0.983)
 
 #----------------------------------------Login Page--------------------------------------------
-img=CTkImage(Image.open("login.jpg"),size=(1200,800))
-ur=CTkImage(Image.open("user.png"),size=(35,35))
-lok=CTkImage(Image.open("lock.png"),size=(27,27))
+img=CTkImage(Image.open("icons/login.jpg"),size=(1200,800))
+ur=CTkImage(Image.open("icons/user.png"),size=(35,35))
+lok=CTkImage(Image.open("icons/lock.png"),size=(27,27))
 
 lg=CTkFrame(app,fg_color="transparent")
 bg=CTkLabel(lg,text="",image=img,bg_color="transparent")
@@ -530,12 +530,12 @@ page2 = CTkFrame(app, fg_color="#1a1a1a")
 # SideBar
 sidebar=CTkFrame(page2,fg_color="#03773d")
 sidebar.place(relx=0.0, anchor="nw", relwidth=0.22, relheight=1.0) 
-img1=CTkImage(Image.open("logo.png"),size=(150,150))
-img2=CTkImage(Image.open("stock button.png"),size=(37,37))
-img3=CTkImage(Image.open("order button.png"),size=(37,37))
-img4=CTkImage(Image.open("update button.png"),size=(37,37))
-img5=CTkImage(Image.open("delete button.png"),size=(37,37))
-img6=CTkImage(Image.open("log-out button.png"),size=(37,37))
+img1=CTkImage(Image.open("icons/logo.png"),size=(150,150))
+img2=CTkImage(Image.open("icons/stock button.png"),size=(37,37))
+img3=CTkImage(Image.open("icons/order button.png"),size=(37,37))
+img4=CTkImage(Image.open("icons/update button.png"),size=(37,37))
+img5=CTkImage(Image.open("icons/delete button.png"),size=(37,37))
+img6=CTkImage(Image.open("icons/log-out button.png"),size=(37,37))
 logo=CTkLabel(sidebar,text="",image=img1,fg_color="transparent")
 logo.place(relx=0.21,rely=0.033,anchor="nw")
 logo_label=CTkLabel(sidebar,text="Micro Center",fg_color="transparent",font=("Arial",38,"bold"))
@@ -585,9 +585,9 @@ buta.place(relx=0.9497,rely=0.0875,anchor="se")
 #Dynamic Wiget frame
 Dynamic_frame=CTkFrame(main_frame,fg_color="transparent",height=120,width=840)
 Dynamic_frame.place(relx=0.051,rely=0.11)
-img7=CTkImage(Image.open("stock.png"),size=(65,65))
-img8=CTkImage(Image.open("orders.png"),size=(65,65))
-img9=CTkImage(Image.open("finished.png"),size=(65,65))
+img7=CTkImage(Image.open("icons/stock.png"),size=(65,65))
+img8=CTkImage(Image.open("icons/orders.png"),size=(65,65))
+img9=CTkImage(Image.open("icons/finished.png"),size=(65,65))
 
 w1=CTkFrame(Dynamic_frame,fg_color="#03773d",height=80,width=250)
 w1.place(relx=0.0,rely=0.5,anchor="w")
@@ -617,7 +617,7 @@ w3_lab.place(relx=0.37,rely=0.1,anchor="nw")
 w3_lab2.place(relx=0.37,rely=0.5,anchor="nw")
 
 #Search Frame
-img10=CTkImage(Image.open("search.png"),size=(25,25))
+img10=CTkImage(Image.open("icons/search.png"),size=(25,25))
 search_frame=CTkFrame(main_frame,fg_color="#313131",height=60,width=840)
 search_frame.place(relx=0.051,rely=0.28)
 
